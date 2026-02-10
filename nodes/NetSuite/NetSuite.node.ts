@@ -27,7 +27,7 @@ import {
 
 import pLimit from '@common.js/p-limit';
 
-const debug = debuglog('n8n-nodes-netsuite');
+const debug = debuglog('n8n-nodes-netsuite-combined');
 
 // OAuth 1.0a implementation
 const createOAuth = (credentials: INetSuiteCredentials) => {
@@ -160,7 +160,7 @@ const makeNetSuiteRequest = async (
 };
 
 const handleNetsuiteResponse = (fns: IExecuteFunctions, response: INetSuiteResponse) => {
-	debug(`Netsuite response:`, response.statusCode, response.body);
+	debug(`Netsuite CH response:`, response.statusCode, response.body);
 	let body: JsonObject = {};
 	const responseBody = response.body || {};
 	const {

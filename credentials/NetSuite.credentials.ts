@@ -4,9 +4,9 @@ import {
 } from 'n8n-workflow';
 
 export class NetSuite implements ICredentialType {
-	name = 'netsuite';
-	displayName = 'NetSuite';
-	documentationUrl = 'netsuite';
+	name = 'netsuite-ch';
+	displayName = 'NetSuite CH';
+	documentationUrl = 'netsuite-ch';
 	properties: INodeProperties[] = [
 		{
 			displayName: 'Hostname',

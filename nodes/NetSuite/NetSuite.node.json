@@ -1,5 +1,5 @@
 {
-	"node": "n8n-nodes-netsuite.netSuite",
+	"node": "n8n-nodes-netsuite-combined.netSuite",
 	"nodeVersion": "1.0",
 	"codexVersion": "1.0",
 	"categories": [
@@ -9,12 +9,12 @@
 	"resources": {
 		"credentialDocumentation": [
 			{
-				"url": "https://github.com/drowl87/n8n-nodes-netsuite"
+				"url": "https://github.com/BerkieBb/n8n-nodes-netsuite-combined"
 			}
 		],
 		"primaryDocumentation": [
 			{
-				"url": "https://github.com/drowl87/n8n-nodes-netsuite"
+				"url": "https://github.com/BerkieBb/n8n-nodes-netsuite-combined"
 			}
 		]
 	}

@@ -4,13 +4,13 @@ import { INodeTypeDescription } from 'n8n-workflow';
  * Options to be displayed
  */
 export const nodeDescription: INodeTypeDescription = {
-	displayName: 'NetSuite',
-	name: 'netSuite',
+	displayName: 'NetSuite CH',
+	name: 'netsuite-ch',
 	group: ['input'],
 	version: 1,
-	description: 'NetSuite REST API',
+	description: 'NetSuite REST API with Custom Headers',
 	defaults: {
-		name: 'NetSuite',
+		name: 'NetSuite CH',
 		color: '#125580',
 	},
 	icon: 'file:netSuite.svg',
@@ -18,7 +18,7 @@ export const nodeDescription: INodeTypeDescription = {
 	outputs: ['main'],
 	credentials: [
 		{
-			name: 'netsuite',
+			name: 'netsuite-ch',
 			required: true,
 		},
 	],
