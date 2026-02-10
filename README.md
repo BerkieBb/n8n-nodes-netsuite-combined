@@ -1,12 +1,13 @@
-# n8n-nodes-netsuite
+# n8n-nodes-netsuite-combined
 
 ![n8n.io - Workflow Automation](https://raw.githubusercontent.com/n8n-io/n8n/master/assets/n8n-logo.png)
 
 n8n node for interacting with NetSuite using [SuiteTalk REST Web Services](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/chapter_1540391670.html).
 
 This project has been forked to extend a few additional transaction types in NetSuite as well as patch several vulnerabilities in outdated dependencies.
+This project also includes custom headers.
 
-The community project and its dependencies and versions is [available here on NPM](https://www.npmjs.com/package/@drowl87/n8n-nodes-netsuite).
+The community project and its dependencies and versions is [available here on NPM](https://www.npmjs.com/package/n8n-nodes-netsuite-combined).
 
 ## How to install
 
@@ -16,7 +17,7 @@ For users on n8n v0.187+, your instance owner can install this node from [Commun
 
 1. Go to **Settings > Community Nodes**.
 2. Select **Install**.
-3. Enter `@drowl87/n8n-nodes-netsuite` in **Enter npm package name**.
+3. Enter `n8n-nodes-netsuite-combined` in **Enter npm package name**.
 4. Agree to the [risks](https://docs.n8n.io/integrations/community-nodes/risks/) of using community nodes: select **I understand the risks of installing unverified code from a public source**.
 5. Select **Install**.
 
@@ -26,11 +27,11 @@ After installing the node, you can use it like any other node. n8n displays the 
 
 To get started install the package in your n8n root directory:
 
-`npm install @drowl87/n8n-nodes-netsuite`
+`npm install n8n-nodes-netsuite-combined`
 
 For Docker-based deployments, add the following line before the font installation command in your [n8n Dockerfile](https://github.com/n8n-io/n8n/blob/master/docker/images/n8n/Dockerfile):
 
-`RUN cd /usr/local/lib/node_modules/n8n && npm install @drowl87/n8n-nodes-netsuite`
+`RUN cd /usr/local/lib/node_modules/n8n && npm install n8n-nodes-netsuite-combined`
 
 ## Configuration
 
@@ -54,7 +55,7 @@ For Docker-based deployments, add the following line before the font installatio
 
 ## Contributing
 
-I'm fairly new to n8n so please feel free to add onto this and submit pull requests. Many thanks to the original work by [drudge](https://github.com/drudge/n8n-nodes-netsuite) and additions by [ianpogi5](https://github.com/ianpogi5/n8n-nodes-netsuite).
+I'm fairly new to n8n so please feel free to add onto this and submit pull requests. Many thanks to the original work by [drudge](https://github.com/drudge/n8n-nodes-netsuite), the additions by [ianpogi5](https://github.com/ianpogi5/n8n-nodes-netsuite), the patches by [drowl87](https://github.com/drowl87/n8n-nodes-netsuite) and the custom headers by [JahzielCabrera](https://github.com/disruptive-learning/n8n-nodes-netsuite-custom).
 
 ## License
 
