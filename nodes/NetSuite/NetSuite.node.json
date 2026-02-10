@@ -1,5 +1,5 @@
 {
-	"node": "n8n-nodes-netsuite-combined.netSuite",
+	"node": "n8n-nodes-netsuite-combined.netsuite-ch",
 	"nodeVersion": "1.0",
 	"codexVersion": "1.0",
 	"categories": [
