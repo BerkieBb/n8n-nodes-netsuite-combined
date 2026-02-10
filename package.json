@@ -1,0 +1,80 @@
+{
+  "name": "n8n-nodes-netsuite-combined",
+  "version": "0.1.0",
+  "description": "n8n node for NetSuite using the REST API. This version combines the patches from drowl87 and the custom header support from n8n-nodes-netsuite-custom.",
+  "license": "MIT",
+  "homepage": "https://github.com/BerkieBb/n8n-nodes-netsuite",
+  "engines": {
+    "node": ">=18.17"
+  },
+  "author": {
+    "name": "Berkay Erbas"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BerkieBb/n8n-nodes-netsuite.git"
+  },
+  "main": "index.js",
+  "scripts": {
+    "dev": "tsc --watch",
+    "build": "tsc && gulp",
+    "lint": "eslint nodes credentials package.json",
+    "lintfix": "eslint nodes credentials package.json --fix",
+    "prepublishOnly": "npm run build && npm run lint"
+  },
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "n8n",
+    "node",
+    "netsuite",
+    "rest",
+    "api",
+    "suitetalk",
+    "n8n-node",
+    "n8n-community-node-package"
+  ],
+  "contributors": [
+    "Nicholas Penree (@drudge)",
+    "Ian Dela Cruz (@ianpogi5)",
+    "David Rowley (@drowl87)",
+    "Jahziel Cabrera (@JahzielCabrera)",
+    "Berkay Erbas (@BerkieBb)"
+  ],
+  "n8n": {
+    "n8nNodesApiVersion": 1,
+    "credentials": [
+      "dist/credentials/NetSuite.credentials.js"
+    ],
+    "nodes": [
+      "dist/nodes/NetSuite/NetSuite.node.js"
+    ]
+  },
+  "devDependencies": {
+    "@eslint/config-array": "^0.23.1",
+    "@eslint/js": "^9.39.2",
+    "@eslint/object-schema": "^3.0.1",
+    "@types/cacheable-request": "^6.0.3",
+    "@types/keyv": "^3.1.4",
+    "@types/node": "^18.19.39",
+    "@types/responselike": "^1.0.3",
+    "@typescript-eslint/parser": "^8.55.0",
+    "eslint": "^9.39.2",
+    "globals": "^17.3.0",
+    "gulp": "^5.0.1",
+    "n8n-workflow": "*",
+    "typescript": "^5.9.3",
+    "typescript-eslint": "^8.55.0"
+  },
+  "peerDependencies": {
+    "n8n-workflow": "*"
+  },
+  "dependencies": {
+    "@common.js/p-limit": "^6.1.0"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/",
+    "access": "public"
+  }
+}
