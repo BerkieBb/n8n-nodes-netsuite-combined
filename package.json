@@ -3,7 +3,7 @@
   "version": "0.1.1",
   "description": "n8n node for NetSuite using the REST API. This version combines the patches from drowl87 and the custom header support from n8n-nodes-netsuite-custom.",
   "license": "MIT",
-  "homepage": "https://github.com/BerkieBb/n8n-nodes-netsuite",
+  "homepage": "https://github.com/BerkieBb/n8n-nodes-netsuite-combined",
   "engines": {
     "node": ">=18.17"
   },
@@ -12,7 +12,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/BerkieBb/n8n-nodes-netsuite.git"
+    "url": "https://github.com/BerkieBb/n8n-nodes-netsuite-combined"
   },
   "main": "index.js",
   "scripts": {
